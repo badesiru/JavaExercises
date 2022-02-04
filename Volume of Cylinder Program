@@ -1,0 +1,15 @@
+//Siri Rao
+//Volume of Cylinder Program
+import java.util.Scanner; 
+class Main {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.println("Please enter the height and volume of the cylinder!");
+    double height = input.nextInt();
+    double volume = input.nextInt();
+    double firstcalc = Math.PI * height;
+    double secondcalc = volume / firstcalc;
+    double thirdcalc = Math.sqrt(secondcalc);
+    System.out.println("The radius is " + thirdcalc);
+  }
+}
